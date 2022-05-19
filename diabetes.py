@@ -123,9 +123,9 @@ print(f'Precisión: {precision}')
 recall = recall_score(y_test_out, y_pred, average=None).mean()
 print(f'Re-call: {recall}')
 
-f1_score = f1_score(y_test_out, y_pred, average=None).mean()
+f1_score_logred = f1_score(y_test_out, y_pred, average=None).mean()
 
-print(f'f1: {f1_score}')
+print(f'f1: {f1_score_logred}')
 
 
 
@@ -175,9 +175,9 @@ print(f'Precisión: {precision_svc}')
 recall_svc = recall_score(y_test_out, y_pred_svc, average=None).mean()
 print(f'Re-call: {recall_svc}')
 
-#f1_score_svc = f1_score(y_test_out, y_pred_svc, average=None).mean()
+f1_score_svc = f1_score(y_test_out, y_pred_svc, average=None).mean()
 
-#print(f'f1: {f1_score_svc}')
+print(f'f1: {f1_score_svc}')
 
 
 
@@ -223,9 +223,9 @@ print(f'Precisión: {precision_arbol}')
 recall_arbol = recall_score(y_test_out, y_pred_arbol, average=None).mean()
 print(f'Re-call: {recall_arbol}')
 
-#f1_score_arbol = f1_score(y_test_out, y_pred_arbol, average=None).mean()
+f1_score_arbol = f1_score(y_test_out, y_pred_arbol, average=None).mean()
 
-#print(f'f1: {f1_score_arbol}')
+print(f'f1: {f1_score_arbol}')
 
 
 
@@ -270,9 +270,9 @@ print(f'Precisión: {precision_gnb}')
 recall_gnb = recall_score(y_test_out, y_pred_gnb, average=None).mean()
 print(f'Re-call: {recall_gnb}')
 
-#f1_score_gnb = f1_score(y_test_out, y_pred_gnb, average=None).mean()
+f1_score_gnb = f1_score(y_test_out, y_pred_gnb, average=None).mean()
 
-#print(f'f1: {f1_score_gnb}')
+print(f'f1: {f1_score_gnb}')
 
 
 #MODELO KNN
@@ -315,6 +315,6 @@ print(f'Precisión: {precision_knn}')
 recall_knn = recall_score(y_test_out, y_pred_knn, average=None).mean()
 print(f'Re-call: {recall_knn}')
 
-#f1_score_knn = f1_score(y_test_out, y_pred_knn, average=None).mean()
+f1_score_knn = f1_score(y_test_out, y_pred_knn, average=None).mean()
 
-#print(f'f1: {f1_score_knn}')
+print(f'f1: {f1_score_knn}')
